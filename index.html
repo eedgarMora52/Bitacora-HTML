@@ -7,6 +7,20 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <h1 class="logo"><a href="#top">Bitácora</a></h1>
+        <ul class="nav-links">
+          <li><a href="#html">HTML</a></li>
+          <li><a href="#css">CSS</a></li>
+          <li><a href="#dom">DOM</a></li>
+          <li><a href="#animaciones">Animaciones</a></li>
+          <li><a href="#ia">IA</a></li>
+      </ul>
+    </div>
+  </nav>
+
     <div class="contenedor">
       <h1 class="title">Bitácora HTML-CSS-JS</h1>
 
@@ -27,19 +41,19 @@
 
       <h1 class="title">Conceptos unidad 1</h1>
 
-      <h2>¿Qué es HTML?</h2> 
+      <h2 id="html">¿Qué es HTML?</h2> 
           <p>
             HTML (HyperText Markup Language) es el lenguaje de marcado estándar utilizado para crear y estructurar contenido en la web. 
             Utiliza etiquetas para definir elementos como encabezados, párrafos, enlaces, imágenes y otros componentes de una página web.
           </p>
 
-          <h2>¿Que es CSS?</h2>
+          <h2 id="css">¿Que es CSS?</h2>
           <p>
             CSS (Cascading Style Sheets) es un lenguaje de hojas de estilo utilizado para describir la presentación y el diseño de un documento HTML. 
             Permite controlar aspectos visuales como colores, fuentes, márgenes, y disposición de los elementos en una página web.
           </p>
 
-      <h2>¿Que es el DOM?</h2>
+      <h2 id="dom">¿Que es el DOM?</h2>
           <p>
             El DOM (Document Object Model) es una representación estructurada de un documento HTML. 
             Convierte cada elemento de la página (etiquetas, atributos, texto) en un objeto que puede ser accedido y manipulado 
@@ -66,7 +80,7 @@
             Esto permite crear efectos visuales atractivos como menús desplegables, sliders o animaciones personalizadas. 
           </p>
 
-      <h2>¿Como podemos implementar la IA en el desarrollo web?</h2>
+      <h2 id="ia">¿Como podemos implementar la IA en el desarrollo web?</h2>
           <p>
             Cursor es una herramienta que facilita la programación gracias al autocompletado en tiempo real, la depuración de errores y la interacción con frameworks como React o Next.js. 
             Combinado con Claude, que genera estructuras y funciones complejas, permite desarrollar 
@@ -162,7 +176,7 @@
             la animación esperará 2 segundos después de que se active antes de comenzar. Esto es útil para sincronizar animaciones o crear efectos escalonados.
           </p>
           
-        <h2>Animation-timing-function</h2>
+        <h2 id="animaciones">Animation-timing-function</h2>
           <p>
             La propiedad <code>animation-timing-function</code> en CSS define la velocidad de una animación a lo largo de su duración.
             Permite controlar cómo se acelera o desacelera la animación en diferentes puntos del tiempo. 
