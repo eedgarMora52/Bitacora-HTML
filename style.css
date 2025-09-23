@@ -4,6 +4,25 @@ html {
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Open+Sans:wght@300;400;600&display=swap');
 
+
+
+/*Celular*/
+        .h1{
+            width: 100px;
+            height: 100px;
+        }
+ 
+        @media (max-width: 768px){
+            .h1{
+                background-color: brown;
+            }
+        }
+        @media (min-width: 1024px){
+            .h1{
+                background-color: rgb(22, 35, 221);
+            }
+        }
+
 body {
   font-family: 'Helvetica', geist;
   background: #b8d8f8;
