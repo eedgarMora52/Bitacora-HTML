@@ -6,11 +6,10 @@ html {
 
 
 
-/*Celular*/
-        .h1{
-            width: 100px;
-            height: 100px;
-        }
+.h1{
+  width: 100px;
+  height: 100px;
+  }
  
         @media (max-width: 768px){
             .h1{
@@ -161,7 +160,7 @@ strong, code {
 }
 
 .logo a:hover {
-  color: #bbdefb; /* un azul clarito cuando pases el mouse */
+  color: #bbdefb; 
 }
 
 

@@ -1,0 +1,99 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  min-height: 100vh;
+}
+
+.scene {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+.fondo-halo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+
+.monte-amarillo-izquierda,
+.monte-derecho {
+  position: absolute;
+  bottom: -10%;       
+  height: 130%;       
+  width: auto;
+  z-index: 2;
+}
+
+.monte-amarillo-izquierda {
+  left: -25%;         
+  min-width: 160%;   
+}
+
+.monte-derecho {
+  right: -25%;        
+  min-width: 160%;    
+}
+
+
+.master-chief {
+  position: absolute;
+  bottom: 0;
+  left: 18%;
+  height: 95%;        
+  width: auto;
+  z-index: 3;
+}
+
+
+.logo-halo {
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+  width: 70%;
+  max-width: 100%;
+  height: auto;
+  z-index: 4;
+}
+
+@media (max-width: 1024px) {
+  .monte-amarillo-izquierda,
+  .monte-derecho {
+    min-width: 200%;   
+    height: 150%;
+  }
+
+  .master-chief {
+    height: 110%;
+    left: 12%;
+  }
+
+  .logo-halo { width: 35%; }
+}
+
+@media (max-width: 600px) {
+  .monte-amarillo-izquierda,
+  .monte-derecho {
+    min-width: 250%;   
+    height: 170%;
+  }
+
+  .master-chief {
+    height: 120%;
+    left: 8%;
+  }
+
+  .logo-halo { width: 42%; }
+}
