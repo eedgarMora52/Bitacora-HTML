@@ -17,12 +17,10 @@
 
         <ul class="nav-links">
           <li><a href="#html">HTML</a></li>
-          <li><a href="#css">CSS</a></li>
-          <li><a href="#dom">DOM</a></li>
-          <li><a href="#animaciones">Animaciones</a></li>
           <li><a href="#ia">IA</a></li>
           <li><a href="iframes.html">Embeds</a></li>
           <li><a href="composicion.html">Composición</a></li>
+          <li><a href="#seccionJS">JavaScript</a></li>
         </ul>
       </div>
     </nav>
@@ -38,13 +36,13 @@
         Utiliza etiquetas para definir elementos como encabezados, párrafos, enlaces, imágenes y otros componentes de una página web.
       </p>
 
-      <h2 id="css">¿Que es CSS?</h2>
+      <h2>¿Que es CSS?</h2>
       <p>
         CSS (Cascading Style Sheets) es un lenguaje de hojas de estilo utilizado para describir la presentación y el diseño de un documento HTML.
         Permite controlar aspectos visuales como colores, fuentes, márgenes, y disposición de los elementos en una página web.
       </p>
 
-      <h2 id="dom">¿Que es el DOM?</h2>
+      <h2>¿Que es el DOM?</h2>
       <p>
         El DOM (Document Object Model) es una representación estructurada de un documento HTML.
         Convierte cada elemento de la página (etiquetas, atributos, texto) en un objeto que puede ser accedido y manipulado
@@ -72,7 +70,7 @@
         Esto permite crear efectos visuales atractivos como menús desplegables, sliders o animaciones personalizadas.
       </p>
 
-      <h2 id="ia">¿Como podemos implementar la IA en el desarrollo web?</h2>
+      <h2>¿Como podemos implementar la IA en el desarrollo web?</h2>
       <p>
         Cursor es una herramienta que facilita la programación gracias al autocompletado en tiempo real, la depuración de errores y la interacción con frameworks como React o Next.js.
         Combinado con Claude, que genera estructuras y funciones complejas, permite desarrollar
@@ -80,7 +78,7 @@
         Sus principales ventajas son mayor productividad, menos errores y mejor calidad del código.
       </p>
 
-      <h2>¿Que es Cursor?</h2>
+      <h2 id="ia">¿Que es Cursor?</h2>
       <p>
         Cursor es una herramienta que facilita la programación gracias al autocompletado en tiempo real, la depuración de errores y la interacción con frameworks como React o Next.js.
         Combinado con Claude, que genera estructuras y funciones complejas, permite desarrollar
@@ -166,7 +164,7 @@
         la animación esperará 2 segundos después de que se active antes de comenzar. Esto es útil para sincronizar animaciones o crear efectos escalonados.
       </p>
 
-      <h2 id="animaciones">Animation-timing-function</h2>
+      <h2>Animation-timing-function</h2>
       <p>
         La propiedad <code>animation-timing-function</code> en CSS define la velocidad de una animación a lo largo de su duración.
         Permite controlar cómo se acelera o desacelera la animación en diferentes puntos del tiempo.
@@ -217,7 +215,53 @@
         <div class="caja rojo grande" >Caja Roja Grande</div>
         <div class="caja azul pequeño" >Caja Azul Pequeña</div>
 
+        <h1 class="title" id="seccionJS">JavaScript</h1>
 
+        <h2>Funciones</h2>
+        <p>
+          Una función en JavaScript es un bloque de código reutilizable que realiza una tarea específica.
+          Se define utilizando la palabra clave <code>function</code>, seguida del nombre de la función y paréntesis que pueden contener parámetros.
+          Las funciones ayudan a organizar el código, mejorar la legibilidad y evitar la repetición.
+          Se pueden invocar (llamar) en cualquier parte del programa para ejecutar el código que contienen.
+        </p>
+
+        <h2>Funciones que retornan valores</h2>
+        <p>
+          Una función que retorna un valor en JavaScript utiliza la palabra clave <code>return</code> para enviar un resultado de vuelta al lugar donde fue llamada.
+          Esto permite que la función produzca un valor que puede ser almacenado en una variable, utilizado en expresiones o pasado como argumento a otras funciones.
+          Por ejemplo, una función que suma dos números y retorna el resultado puede ser definida y utilizada de la siguiente manera:
+        </p>
+        
+        <h2>Llamada a una función</h2>
+        <p>
+          La llamada a una función en JavaScript se realiza escribiendo el nombre de la función seguido de paréntesis.
+          Si la función requiere parámetros, estos se pasan dentro de los paréntesis.
+          Al llamar a una función, el código dentro de ella se ejecuta y, si la función retorna un valor, este puede ser capturado o utilizado.
+          Por ejemplo, si tenemos una función llamada <code>sumar</code> que toma dos números como parámetros, podemos llamarla así: <code>sumar(5, 3);</code>.
+        </p>
+
+        <h2>Imprimir en consola el resultado de una función</h2>
+        <p>
+          Para imprimir en la consola el resultado de una función en JavaScript, se puede utilizar la función <code>console.log()</code>.
+          Primero, se llama a la función y se captura su valor de retorno, luego se pasa ese valor a <code>console.log()</code> para mostrarlo en la consola del navegador o del entorno de desarrollo.
+          Por ejemplo:
+        </p>
+
+        <h2>getElementById</h2>
+        <p>
+          El método <code>getElementById</code> en JavaScript se utiliza para acceder a un elemento HTML específico mediante su atributo "id".
+          Este método devuelve una referencia al primer elemento que coincide con el id proporcionado, lo que permite manipular su contenido, estilo o atributos.
+          Por ejemplo, si tenemos un elemento con <code>&lt;div id="miElemento"&gt;&lt;/div&gt;</code>, podemos acceder a él en JavaScript usando <code>document.getElementById("miElemento")</code>.
+        </p>  
+
+        <h2>addEventListener</h2>
+          <p>
+            El método <code>addEventListener</code> en JavaScript se utiliza para registrar un evento en un elemento HTML.
+            Permite especificar una función que se ejecutará cuando ocurra un evento particular, como un clic, movimiento del mouse o pulsación de una tecla.
+            Este método es fundamental para crear interactividad en las páginas web, ya que permite responder a las acciones del usuario de manera dinámica.
+            Por ejemplo, para escuchar un clic en un botón, se puede usar: <code>boton.addEventListener("click", funcion);</code>.
+          </p>
+            
       <script>
 //  IF - ELSE (Mario Bros)
 let monedas = 12;
