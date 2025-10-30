@@ -1,4 +1,4 @@
-
+/* Reinicio básico */
 * {
   margin: 0;
   padding: 0;
@@ -6,10 +6,12 @@
 }
 
 body {
+  height: 200vh; /* deja espacio para hacer scroll */
   background: #000;
-  min-height: 100vh;
+  overflow-x: hidden;
 }
 
+/* Contenedor principal */
 .scene {
   position: relative;
   width: 100%;
@@ -17,83 +19,39 @@ body {
   overflow: hidden;
 }
 
-
-.fondo-halo {
+/* Capas base */
+.scene img {
   position: absolute;
-  inset: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   object-fit: cover;
-  z-index: 1;
+  top: 0;
+  left: 0;
+  transition: transform 0.1s linear;
 }
 
-
-.monte-amarillo-izquierda,
-.monte-derecho {
-  position: absolute;
-  bottom: -10%;       
-  height: 130%;       
-  width: auto;
-  z-index: 2;
-}
-
-.monte-amarillo-izquierda {
-  left: -25%;         
-  min-width: 160%;   
-}
-
-.monte-derecho {
-  right: -25%;        
-  min-width: 160%;    
-}
-
-
+/* Si quieres tamaños específicos para ciertos elementos */
 .master-chief {
-  position: absolute;
+  width: 60%;
+  left: 50%;
+  transform: translateX(-50%);
   bottom: 0;
-  left: 18%;
-  height: 95%;        
-  width: auto;
-  z-index: 3;
+  height: auto;
 }
-
 
 .logo-halo {
-  position: absolute;
-  right: 5%;
-  bottom: 5%;
-  width: 70%;
-  max-width: 100%;
+  width: 40%;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
   height: auto;
-  z-index: 4;
 }
 
-@media (max-width: 1024px) {
-  .monte-amarillo-izquierda,
-  .monte-derecho {
-    min-width: 200%;   
-    height: 150%;
-  }
-
-  .master-chief {
-    height: 110%;
-    left: 12%;
-  }
-
-  .logo-halo { width: 35%; }
-}
-
-@media (max-width: 600px) {
-  .monte-amarillo-izquierda,
-  .monte-derecho {
-    min-width: 250%;   
-    height: 170%;
-  }
-
-  .master-chief {
-    height: 120%;
-    left: 8%;
-  }
-
-  .logo-halo { width: 42%; }
-}
+.contenido {
+            padding: 50px 20px;
+            background-color: #0b4d67;
+            text-align: center;
+            min-height: 500px;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
