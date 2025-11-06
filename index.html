@@ -15,6 +15,10 @@
       <div class="nav-container">
         <h1 class="logo"><a href="#top">Bitácora</a></h1>
 
+        <button class="menu-toggle" aria-label="Abrir menú">
+        ☰
+        </button>
+
         <ul class="nav-links">
           <li><a href="#html">HTML</a></li>
           <li><a href="#ia">IA</a></li>
@@ -216,6 +220,60 @@
         <div class="caja rojo grande" >Caja Roja Grande</div>
         <div class="caja azul pequeño" >Caja Azul Pequeña</div>
 
+      <h2>Order</h2>
+      <p>
+        La propiedad <code>order</code> en CSS se utiliza en contenedores flexibles (flexbox) para controlar el orden en que los elementos hijos se muestran visualmente.
+        Cada elemento dentro de un contenedor flex puede tener un valor de <code>order</code> asignado, que determina su posición relativa en el eje principal del contenedor.
+        Los elementos con valores de <code>order</code> más bajos se muestran antes que aquellos con valores más altos.
+        Por defecto, todos los elementos tienen un valor de <code>order</code> de 0.
+      </p>
+
+      <h2>Flex-grow</h2>
+      <p>
+        La propiedad <code>flex-grow</code> en CSS se utiliza en contenedores flexibles (flexbox) para definir cómo los elementos hijos pueden crecer y ocupar espacio adicional dentro del contenedor.
+        Un valor de <code>flex-grow</code> mayor que 0 permite que un elemento crezca proporcionalmente en función del espacio disponible.
+        Por ejemplo, si un elemento tiene <code>flex-grow: 2;</code> y otro tiene <code>flex-grow: 1;</code>, el primero crecerá el doble que el segundo cuando haya espacio extra en el contenedor.
+      </p>
+
+      <h2>Flex-basis</h2>
+      <p>
+        La propiedad <code>flex-basis</code> en CSS se utiliza en contenedores flexibles (flexbox) para definir el tamaño inicial de un elemento antes de que se distribuya el espacio adicional.
+        Puede establecerse en valores absolutos (como píxeles o porcentajes) o en palabras clave como <code>auto</code>.
+        <code>flex-basis</code> determina la base sobre la cual se aplican las propiedades <code>flex-grow</code> y <code>flex-shrink</code>.
+        Por ejemplo, si un elemento tiene <code>flex-basis: 200px;</code>, comenzará con un ancho de 200 píxeles antes de ajustarse según el espacio disponible en el contenedor.
+      </p>
+
+      <h2>Align-self</h2>
+      <p>
+        La propiedad <code>align-self</code> en CSS se utiliza en contenedores flexibles (flexbox) para alinear individualmente un elemento hijo a lo largo del eje transversal (perpendicular al eje principal).
+        Esta propiedad permite anular la alineación establecida por el contenedor padre para un elemento específico.
+        Los valores comunes incluyen <code>auto</code> (hereda la alineación del contenedor), <code>flex-start</code>, <code>flex-end</code>, <code>center</code>, <code>baseline</code> y <code>stretch</code>.
+        Por ejemplo, si un elemento tiene <code>align-self: center;</code>, se centrará verticalmente dentro del contenedor flex.
+      </p>
+
+      <h2>Cookies en Paginas web</h2>
+      <p>
+        Las cookies son pequeños archivos de texto que los sitios web guardan en tu navegador para recordar información
+        sobre tu visita, como preferencias, inicio de sesión y contenido relevante.
+        Esto mejora tu experiencia en línea al hacerla más personalizada y fácil de usar.
+        Existen dos tipos principales: las cookies propias (del sitio que visitas) y las de terceros (de otros sitios que el primero utiliza, como anuncios)
+      </p>
+ 
+      <h2>¿Que pasa si tu pagina no te avisa del uso de cookies?</h2>
+      <p>
+        Si una página no avisa de cookies, puede no estar cumpliendo con las leyes de protección de datos como el RGPD, lo que expone al usuario a riesgos de privacidad
+        como el robo de datos o el rastreo sin consentimiento. En consecuencia, un sitio sin aviso podría estar monitoreando y utilizando la información personal
+        del usuario de forma ilícita para fines comerciales sin su conocimiento ni consentimiento.
+      </p>
+
+      <h2>Flex-box</h2>
+      <p>
+        Flexbox es un modelo de diseño en CSS que facilita la distribución y alineación de elementos dentro de un contenedor,
+        permitiendo crear diseños flexibles y adaptativos. Con Flexbox, los elementos hijos pueden ajustarse automáticamente
+        al espacio disponible, alinearse vertical u horizontalmente, y cambiar su tamaño según las necesidades del diseño.
+        Esto simplifica la creación de interfaces responsivas y mejora la experiencia del usuario en diferentes dispositivos.
+      </p>
+
         <h1 class="title" id="seccionJS">JavaScript</h1>
 
         <h2>Funciones</h2>
@@ -307,6 +365,12 @@ do {
   anillos = anillos + 1;
 } while (anillos < 3);
 
+const toggle = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  toggle.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
       </script>
     </div>
   </body>
