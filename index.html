@@ -8,6 +8,11 @@
       <link rel="stylesheet" href="style.css">
       <link rel="stylesheet" href="reset.css">
       <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+      <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"/>
     </head>
   <body>
 
@@ -273,6 +278,73 @@
         al espacio disponible, alinearse vertical u horizontalmente, y cambiar su tamaño según las necesidades del diseño.
         Esto simplifica la creación de interfaces responsivas y mejora la experiencia del usuario en diferentes dispositivos.
       </p>
+<!--BOOTSTRAP -->
+      <section class="my-5" id="bootstrap">
+        <div class="container">
+          <h2 class="text-center fw-bold mb-4 text-primary">Bootstrap</h2>
+          <p class="text-center">
+            Bootstrap es un framework de código abierto para desarrollar sitios
+            y aplicaciones web responsivas y móviles. Proporciona herramientas
+            predefinidas como estilos CSS, componentes UI y plugins JavaScript.
+          </p>
+
+          <div class="row g-4 mt-4">
+            <div class="col-md-6 col-lg-3">
+              <div class="card border-0 shadow-sm h-100">
+                <div class="card-body text-center">
+                  <h5 class="card-title text-primary">⚡ Rapidez</h5>
+                  <p class="card-text">
+                    Permite desarrollar más rápido gracias a sus componentes
+                    preconstruidos y estructura lista para usar.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+              <div class="card border-0 shadow-sm h-100">
+                <div class="card-body text-center">
+                  <h5 class="card-title text-success">🌐 Compatibilidad</h5>
+                  <p class="card-text">
+                    Totalmente compatible con navegadores modernos y dispositivos
+                    móviles de distintos tamaños.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+              <div class="card border-0 shadow-sm h-100">
+                <div class="card-body text-center">
+                  <h5 class="card-title text-warning">🎨 Personalización</h5>
+                  <p class="card-text">
+                    Permite personalizar colores, fuentes y variables Sass para
+                    adaptar el diseño a tus necesidades.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+              <div class="card border-0 shadow-sm h-100">
+                <div class="card-body text-center">
+                  <h5 class="card-title text-danger">📚 Comunidad</h5>
+                  <p class="card-text">
+                    Gran comunidad activa con documentación completa y
+                    actualizada constantemente.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="alert alert-info mt-4 shadow-sm text-center">
+            Bootstrap utiliza un sistema de rejilla
+            <b>(grid system)</b> basado en filas y columnas que facilita
+            construir interfaces responsivas fácilmente.
+          </div>
+        </div>
+      </section>
 
         <h1 class="title" id="seccionJS">JavaScript</h1>
 
@@ -321,7 +393,38 @@
             Por ejemplo, para escuchar un clic en un botón, se puede usar: <code>boton.addEventListener("click", funcion);</code>.
           </p>
             
-      <script>
+
+<div id="cookie-banner" class="cookie-banner">
+  <div class="cookie-content">
+    <p>
+      Este sitio utiliza cookies para mejorar tu experiencia.  
+      Al continuar navegando aceptas nuestro uso de cookies.
+    </p>
+    <button id="accept-cookies" class="btn-aceptar">Aceptar</button>
+  </div>
+</div>
+
+
+
+  <script>
+
+ // Mostrar el banner solo si el usuario no ha aceptado
+  document.addEventListener("DOMContentLoaded", () => {
+    const banner = document.getElementById("cookie-banner");
+    const acceptBtn = document.getElementById("accept-cookies");
+
+    if (!localStorage.getItem("cookiesAccepted")) {
+      banner.classList.add("show");
+    }
+
+    acceptBtn.addEventListener("click", () => {
+      localStorage.setItem("cookiesAccepted", "true");
+      banner.classList.remove("show");
+    });
+  });
+
+
+
 //  IF - ELSE (Mario Bros)
 let monedas = 12;
 
